@@ -1,4 +1,4 @@
-package com.myspringboot.repository;
+package com.myspringboot.repository.user;
 
 import java.io.Serializable;
 import java.util.List;

@@ -23,7 +23,7 @@ public class UserController {
 	
 	@RequestMapping(value = "/userlist")
 	public List<UserEntity> userList(){
-		List<UserEntity> users = userService.list("keytest");
+		List<UserEntity> users = userService.list();
 		logger.debug("debug : users : {}", users);
 		logger.info("info : users : {}", users);
 		logger.error("error : users : {}", users);

@@ -11,7 +11,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import com.myspringboot.entity.UserEntity;
-import com.myspringboot.repository.UserRepository;
+import com.myspringboot.repository.user.UserRepository;
 import com.myspringboot.service.UserService;
 
 @Service
@@ -24,7 +24,7 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	@Cacheable //key的属性值必须是SpEL表达式，如果常量的话必须加单引号如key = "'userlist'"
-	public List<UserEntity> list(String param) {
+	public List<UserEntity> list() {
 		List<UserEntity> users = userRepository.findAll();
 		return users;
 	}

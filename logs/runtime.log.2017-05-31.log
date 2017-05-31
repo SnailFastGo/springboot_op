@@ -1,0 +1,648 @@
+2017-05-31 10:58:19.555 [main] INFO  com.myspringboot.Application - Starting Application on BFD-544-PC with PID 40484 (D:\workspace\springboot_op\target\classes started by BFD-544 in D:\workspace\springboot_op)
+2017-05-31 10:58:19.558 [main] INFO  com.myspringboot.Application - No active profile set, falling back to default profiles: default
+2017-05-31 10:58:19.633 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d0f2471: startup date [Wed May 31 10:58:19 CST 2017]; root of context hierarchy
+2017-05-31 10:58:19.948 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.5.Final
+2017-05-31 10:58:21.184 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 10:58:21.304 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 10:58:21.338 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'userRepository' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-05-31 10:58:21.342 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'bookRepository' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-05-31 10:58:21.344 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'loggerRepository' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-05-31 10:58:21.558 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 10:58:21.597 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.UserRepository.
+2017-05-31 10:58:21.598 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.BookRepository.
+2017-05-31 10:58:21.599 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.LoggerRepository.
+2017-05-31 10:58:22.841 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-05-31 10:58:22.856 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-05-31 10:58:22.857 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.13
+2017-05-31 10:58:22.971 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-05-31 10:58:22.971 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3338 ms
+2017-05-31 10:58:23.197 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-05-31 10:58:23.199 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-31 10:58:23.200 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.myspringboot.servlet.MyServlet' to [/myservlet]
+2017-05-31 10:58:23.204 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-31 10:58:23.205 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-31 10:58:23.205 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-31 10:58:23.205 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-31 10:58:23.206 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2017-05-31 10:58:23.620 [main] WARN  org.apache.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 20
+2017-05-31 10:58:23.927 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 10:58:23.942 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: bookPersistenceUnit
+	...]
+2017-05-31 10:58:24.121 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-31 10:58:24.123 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-05-31 10:58:24.124 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-05-31 10:58:24.164 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-31 10:58:24.307 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-31 10:58:24.882 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 10:58:24.971 [main] WARN  org.apache.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 20
+2017-05-31 10:58:25.004 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 10:58:25.004 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: userPersistenceUnit
+	...]
+2017-05-31 10:58:25.017 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-31 10:58:25.063 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 10:58:25.349 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookController': Unsatisfied dependency expressed through field 'bookservice'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.myspringboot.service.BookService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2017-05-31 10:58:25.349 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 10:58:25.352 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 10:58:25.355 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2017-05-31 10:58:25.408 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-05-31 10:58:25.493 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field bookservice in com.myspringboot.web.BookController required a bean of type 'com.myspringboot.service.BookService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.myspringboot.service.BookService' in your configuration.
+
+2017-05-31 10:59:18.128 [main] INFO  com.myspringboot.Application - Starting Application on BFD-544-PC with PID 38044 (D:\workspace\springboot_op\target\classes started by BFD-544 in D:\workspace\springboot_op)
+2017-05-31 10:59:18.130 [main] INFO  com.myspringboot.Application - No active profile set, falling back to default profiles: default
+2017-05-31 10:59:18.204 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d0f2471: startup date [Wed May 31 10:59:18 CST 2017]; root of context hierarchy
+2017-05-31 10:59:18.476 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.5.Final
+2017-05-31 10:59:19.497 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 10:59:19.603 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 10:59:19.648 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'userRepository' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-05-31 10:59:19.652 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'bookRepository' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-05-31 10:59:19.655 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'loggerRepository' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-05-31 10:59:19.833 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 10:59:19.867 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.UserRepository.
+2017-05-31 10:59:19.868 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.BookRepository.
+2017-05-31 10:59:19.868 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.LoggerRepository.
+2017-05-31 10:59:21.031 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-05-31 10:59:21.043 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-05-31 10:59:21.044 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.13
+2017-05-31 10:59:21.154 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-05-31 10:59:21.155 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2950 ms
+2017-05-31 10:59:21.354 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-05-31 10:59:21.356 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-31 10:59:21.357 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.myspringboot.servlet.MyServlet' to [/myservlet]
+2017-05-31 10:59:21.360 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-31 10:59:21.361 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-31 10:59:21.361 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-31 10:59:21.362 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-31 10:59:21.362 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2017-05-31 10:59:21.699 [main] WARN  org.apache.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 20
+2017-05-31 10:59:22.033 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 10:59:22.056 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: bookPersistenceUnit
+	...]
+2017-05-31 10:59:22.272 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-31 10:59:22.273 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-05-31 10:59:22.274 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-05-31 10:59:22.331 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-31 10:59:22.483 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-31 10:59:23.000 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 10:59:23.084 [main] WARN  org.apache.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 20
+2017-05-31 10:59:23.113 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 10:59:23.114 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: userPersistenceUnit
+	...]
+2017-05-31 10:59:23.128 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-31 10:59:23.175 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 10:59:24.096 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d0f2471: startup date [Wed May 31 10:59:18 CST 2017]; root of context hierarchy
+2017-05-31 10:59:24.180 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/booklist]}" onto public java.util.List<com.myspringboot.entity.BookEntity> com.myspringboot.web.BookController.booklist()
+2017-05-31 10:59:24.182 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logtest]}" onto public java.lang.String com.myspringboot.web.LoggerController.loggerTest(java.lang.String)
+2017-05-31 10:59:24.183 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/finduserbyname]}" onto public java.util.List<com.myspringboot.entity.UserEntity> com.myspringboot.web.UserController.findUserByName(java.lang.String)
+2017-05-31 10:59:24.184 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/curpage]}" onto public java.util.List<com.myspringboot.entity.UserEntity> com.myspringboot.web.UserController.curPage(int)
+2017-05-31 10:59:24.184 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/userlist]}" onto public java.util.List<com.myspringboot.entity.UserEntity> com.myspringboot.web.UserController.userList()
+2017-05-31 10:59:24.184 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/deleteUserById]}" onto public void com.myspringboot.web.UserController.deleteUser(java.lang.String)
+2017-05-31 10:59:24.187 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-31 10:59:24.188 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-31 10:59:24.225 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/mystatic/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 10:59:24.225 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 10:59:24.226 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 10:59:24.241 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in restExceptionHandler
+2017-05-31 10:59:24.263 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 10:59:24.528 [main] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-05-31 10:59:24.591 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-05-31 10:59:24.612 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-05-31 10:59:24.627 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-05-31 10:59:24.641 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-05-31 10:59:24.658 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-05-31 10:59:24.662 [main] INFO  com.myspringboot.Application - Started Application in 6.979 seconds (JVM running for 7.494)
+2017-05-31 11:01:35.785 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-31 11:01:35.785 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-31 11:01:35.806 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2017-05-31 11:04:43.362 [main] INFO  com.myspringboot.Application - Starting Application on BFD-544-PC with PID 42808 (D:\workspace\springboot_op\target\classes started by BFD-544 in D:\workspace\springboot_op)
+2017-05-31 11:04:43.365 [main] INFO  com.myspringboot.Application - No active profile set, falling back to default profiles: default
+2017-05-31 11:04:43.483 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d0f2471: startup date [Wed May 31 11:04:43 CST 2017]; root of context hierarchy
+2017-05-31 11:04:43.766 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.5.Final
+2017-05-31 11:04:45.020 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:04:45.211 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:04:45.230 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'userRepository' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-05-31 11:04:45.233 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'bookRepository' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-05-31 11:04:45.237 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'loggerRepository' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-05-31 11:04:45.467 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:04:45.509 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.UserRepository.
+2017-05-31 11:04:45.511 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.BookRepository.
+2017-05-31 11:04:45.512 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.LoggerRepository.
+2017-05-31 11:04:46.875 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-05-31 11:04:46.889 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-05-31 11:04:46.890 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.13
+2017-05-31 11:04:47.016 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-05-31 11:04:47.016 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3533 ms
+2017-05-31 11:04:47.241 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-05-31 11:04:47.243 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-31 11:04:47.244 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.myspringboot.servlet.MyServlet' to [/myservlet]
+2017-05-31 11:04:47.248 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-31 11:04:47.249 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-31 11:04:47.250 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-31 11:04:47.250 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-31 11:04:47.250 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2017-05-31 11:04:47.678 [main] WARN  org.apache.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 20
+2017-05-31 11:04:48.045 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 11:04:48.059 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: bookPersistenceUnit
+	...]
+2017-05-31 11:04:48.263 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-31 11:04:48.265 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-05-31 11:04:48.267 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-05-31 11:04:48.318 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-31 11:04:48.442 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-31 11:04:48.950 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 11:04:49.035 [main] WARN  org.apache.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 20
+2017-05-31 11:04:49.074 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 11:04:49.074 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: userPersistenceUnit
+	...]
+2017-05-31 11:04:49.087 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-31 11:04:49.129 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 11:04:49.936 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d0f2471: startup date [Wed May 31 11:04:43 CST 2017]; root of context hierarchy
+2017-05-31 11:04:50.068 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/booklist]}" onto public java.util.List<com.myspringboot.entity.BookEntity> com.myspringboot.web.BookController.booklist()
+2017-05-31 11:04:50.069 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logtest]}" onto public java.lang.String com.myspringboot.web.LoggerController.loggerTest(java.lang.String)
+2017-05-31 11:04:50.071 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/finduserbyname]}" onto public java.util.List<com.myspringboot.entity.UserEntity> com.myspringboot.web.UserController.findUserByName(java.lang.String)
+2017-05-31 11:04:50.071 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/curpage]}" onto public java.util.List<com.myspringboot.entity.UserEntity> com.myspringboot.web.UserController.curPage(int)
+2017-05-31 11:04:50.071 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/userlist]}" onto public java.util.List<com.myspringboot.entity.UserEntity> com.myspringboot.web.UserController.userList()
+2017-05-31 11:04:50.071 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/deleteUserById]}" onto public void com.myspringboot.web.UserController.deleteUser(java.lang.String)
+2017-05-31 11:04:50.074 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-31 11:04:50.074 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-31 11:04:50.105 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/mystatic/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:04:50.105 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:04:50.105 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:04:50.122 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in restExceptionHandler
+2017-05-31 11:04:50.146 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:04:50.398 [main] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-05-31 11:04:50.443 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-05-31 11:04:50.462 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-05-31 11:04:50.473 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-05-31 11:04:50.482 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-05-31 11:04:50.505 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-05-31 11:04:50.513 [main] INFO  com.myspringboot.Application - Started Application in 7.653 seconds (JVM running for 8.187)
+2017-05-31 11:04:54.134 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-31 11:04:54.134 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-31 11:04:54.165 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2017-05-31 11:04:54.370 [http-nio-8080-exec-1] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-31 11:04:54.640 [http-nio-8080-exec-1] INFO  com.myspringboot.web.UserController - info : users : [{name= + zhangsan, gender= F, phone= 12343543, , address= 海淀}, {name= + 王舞, gender= F, phone= 45765756, , address= 昌平}, {name= + 王6, gender= F, phone= 45765756, , address= 昌平}, {name= + 王7, gender= F, phone= 45765756, , address= 昌平}, {name= + 王8, gender= F, phone= 45765756, , address= 昌平}, {name= + 王9, gender= F, phone= 45765756, , address= 昌平}, {name= + 王10, gender= F, phone= 45765756, , address= 昌平}, {name= + 王11, gender= F, phone= 45765756, , address= 昌平}, {name= + 王12, gender= F, phone= 45765756, , address= 昌平}, {name= + 王13, gender= F, phone= 45765756, , address= 昌平}, {name= + 王14, gender= F, phone= 45765756, , address= 昌平}, {name= + 王15, gender= F, phone= 45765756, , address= 昌平}, {name= + 王16, gender= F, phone= 45765756, , address= 昌平}, {name= + 王17, gender= F, phone= 45765756, , address= 昌平}, {name= + 王18, gender= F, phone= 45765756, , address= 昌平}, {name= + 王19, gender= F, phone= 45765756, , address= 昌平}, {name= + 王20, gender= F, phone= 45765756, , address= 昌平}]
+2017-05-31 11:04:54.640 [http-nio-8080-exec-1] ERROR com.myspringboot.web.UserController - error : users : [{name= + zhangsan, gender= F, phone= 12343543, , address= 海淀}, {name= + 王舞, gender= F, phone= 45765756, , address= 昌平}, {name= + 王6, gender= F, phone= 45765756, , address= 昌平}, {name= + 王7, gender= F, phone= 45765756, , address= 昌平}, {name= + 王8, gender= F, phone= 45765756, , address= 昌平}, {name= + 王9, gender= F, phone= 45765756, , address= 昌平}, {name= + 王10, gender= F, phone= 45765756, , address= 昌平}, {name= + 王11, gender= F, phone= 45765756, , address= 昌平}, {name= + 王12, gender= F, phone= 45765756, , address= 昌平}, {name= + 王13, gender= F, phone= 45765756, , address= 昌平}, {name= + 王14, gender= F, phone= 45765756, , address= 昌平}, {name= + 王15, gender= F, phone= 45765756, , address= 昌平}, {name= + 王16, gender= F, phone= 45765756, , address= 昌平}, {name= + 王17, gender= F, phone= 45765756, , address= 昌平}, {name= + 王18, gender= F, phone= 45765756, , address= 昌平}, {name= + 王19, gender= F, phone= 45765756, , address= 昌平}, {name= + 王20, gender= F, phone= 45765756, , address= 昌平}]
+2017-05-31 11:05:10.909 [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1146, SQLState: 42S02
+2017-05-31 11:05:10.909 [http-nio-8080-exec-2] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table 'test.book' doesn't exist
+2017-05-31 11:11:37.240 [main] INFO  com.myspringboot.Application - Starting Application on BFD-544-PC with PID 45124 (D:\workspace\springboot_op\target\classes started by BFD-544 in D:\workspace\springboot_op)
+2017-05-31 11:11:37.243 [main] INFO  com.myspringboot.Application - No active profile set, falling back to default profiles: default
+2017-05-31 11:11:37.352 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d0f2471: startup date [Wed May 31 11:11:37 CST 2017]; root of context hierarchy
+2017-05-31 11:11:37.530 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.5.Final
+2017-05-31 11:11:38.788 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:11:38.875 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:11:39.070 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:11:39.107 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.UserRepository.
+2017-05-31 11:11:39.108 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.mytest.BookRepository.
+2017-05-31 11:11:39.110 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.LoggerRepository.
+2017-05-31 11:11:40.312 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-05-31 11:11:40.337 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-05-31 11:11:40.339 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.13
+2017-05-31 11:11:40.477 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-05-31 11:11:40.478 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3126 ms
+2017-05-31 11:11:40.699 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-05-31 11:11:40.701 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-31 11:11:40.701 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.myspringboot.servlet.MyServlet' to [/myservlet]
+2017-05-31 11:11:40.705 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-31 11:11:40.706 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-31 11:11:40.706 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-31 11:11:40.706 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-31 11:11:40.706 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2017-05-31 11:11:41.034 [main] WARN  org.apache.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 20
+2017-05-31 11:11:41.401 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 11:11:41.418 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: bookPersistenceUnit
+	...]
+2017-05-31 11:11:41.767 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-31 11:11:41.769 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-05-31 11:11:41.770 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-05-31 11:11:41.809 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-31 11:11:41.939 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-31 11:11:42.361 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 11:11:42.432 [main] WARN  org.apache.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 20
+2017-05-31 11:11:42.448 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 11:11:42.448 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: userPersistenceUnit
+	...]
+2017-05-31 11:11:42.462 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-31 11:11:42.478 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 11:11:42.711 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.myspringboot.repository.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2017-05-31 11:11:42.712 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 11:11:42.714 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 11:11:42.717 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2017-05-31 11:11:42.732 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-05-31 11:11:42.806 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userRepository in com.myspringboot.service.impl.UserServiceImpl required a bean of type 'com.myspringboot.repository.UserRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.myspringboot.repository.UserRepository' in your configuration.
+
+2017-05-31 11:13:12.391 [main] INFO  com.myspringboot.Application - Starting Application on BFD-544-PC with PID 46092 (D:\workspace\springboot_op\target\classes started by BFD-544 in D:\workspace\springboot_op)
+2017-05-31 11:13:12.394 [main] INFO  com.myspringboot.Application - No active profile set, falling back to default profiles: default
+2017-05-31 11:13:12.480 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d0f2471: startup date [Wed May 31 11:13:12 CST 2017]; root of context hierarchy
+2017-05-31 11:13:12.688 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.5.Final
+2017-05-31 11:13:13.814 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:13:13.888 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:13:14.120 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:13:14.148 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.UserRepository.
+2017-05-31 11:13:14.149 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.mytest.BookRepository.
+2017-05-31 11:13:14.150 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.LoggerRepository.
+2017-05-31 11:13:15.335 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-05-31 11:13:15.352 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-05-31 11:13:15.353 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.13
+2017-05-31 11:13:15.472 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-05-31 11:13:15.472 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2992 ms
+2017-05-31 11:13:15.706 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-05-31 11:13:15.708 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-31 11:13:15.709 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.myspringboot.servlet.MyServlet' to [/myservlet]
+2017-05-31 11:13:15.712 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-31 11:13:15.713 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-31 11:13:15.713 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-31 11:13:15.714 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-31 11:13:15.714 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2017-05-31 11:13:16.132 [main] WARN  org.apache.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 20
+2017-05-31 11:13:16.500 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 11:13:16.524 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: bookPersistenceUnit
+	...]
+2017-05-31 11:13:16.757 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-31 11:13:16.759 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-05-31 11:13:16.761 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-05-31 11:13:16.799 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-31 11:13:16.930 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-31 11:13:17.362 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 11:13:17.449 [main] WARN  org.apache.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 20
+2017-05-31 11:13:17.465 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 11:13:17.465 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: userPersistenceUnit
+	...]
+2017-05-31 11:13:17.479 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-31 11:13:17.495 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 11:13:17.727 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.myspringboot.entity.UserEntity
+2017-05-31 11:13:17.727 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 11:13:17.730 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 11:13:17.733 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2017-05-31 11:13:17.747 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-05-31 11:13:17.753 [main] ERROR org.springframework.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.myspringboot.entity.UserEntity
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176)
+	at com.myspringboot.Application.main(Application.java:11)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.myspringboot.entity.UserEntity
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 19 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.myspringboot.entity.UserEntity
+	at org.hibernate.jpa.internal.metamodel.MetamodelImpl.managedType(MetamodelImpl.java:210)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:70)
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:68)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:153)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:100)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:82)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:199)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.initAndReturn(RepositoryFactoryBeanSupport.java:280)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:266)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:92)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 29 common frames omitted
+2017-05-31 11:14:13.724 [main] INFO  com.myspringboot.Application - Starting Application on BFD-544-PC with PID 46716 (D:\workspace\springboot_op\target\classes started by BFD-544 in D:\workspace\springboot_op)
+2017-05-31 11:14:13.727 [main] INFO  com.myspringboot.Application - No active profile set, falling back to default profiles: default
+2017-05-31 11:14:13.788 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d0f2471: startup date [Wed May 31 11:14:13 CST 2017]; root of context hierarchy
+2017-05-31 11:14:14.003 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.5.Final
+2017-05-31 11:14:15.250 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:14:15.333 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:14:15.536 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:14:15.567 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.UserRepository.
+2017-05-31 11:14:15.568 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.mytest.BookRepository.
+2017-05-31 11:14:15.568 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.LoggerRepository.
+2017-05-31 11:14:16.723 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-05-31 11:14:16.738 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-05-31 11:14:16.739 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.13
+2017-05-31 11:14:16.881 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-05-31 11:14:16.882 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3094 ms
+2017-05-31 11:14:17.083 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-05-31 11:14:17.085 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-31 11:14:17.086 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.myspringboot.servlet.MyServlet' to [/myservlet]
+2017-05-31 11:14:17.091 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-31 11:14:17.091 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-31 11:14:17.091 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-31 11:14:17.092 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-31 11:14:17.092 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2017-05-31 11:14:17.495 [main] WARN  org.apache.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 20
+2017-05-31 11:14:17.872 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 11:14:17.887 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: bookPersistenceUnit
+	...]
+2017-05-31 11:14:18.145 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-31 11:14:18.147 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-05-31 11:14:18.148 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-05-31 11:14:18.186 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-31 11:14:18.335 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-31 11:14:18.819 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 11:14:18.933 [main] WARN  org.apache.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 20
+2017-05-31 11:14:18.950 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 11:14:18.950 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: userPersistenceUnit
+	...]
+2017-05-31 11:14:18.963 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-31 11:14:19.018 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 11:14:19.899 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d0f2471: startup date [Wed May 31 11:14:13 CST 2017]; root of context hierarchy
+2017-05-31 11:14:19.975 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/booklist]}" onto public java.util.List<com.myspringboot.mytest.BookEntity> com.myspringboot.mytest.BookController.booklist()
+2017-05-31 11:14:19.977 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logtest]}" onto public java.lang.String com.myspringboot.web.LoggerController.loggerTest(java.lang.String)
+2017-05-31 11:14:19.978 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/finduserbyname]}" onto public java.util.List<com.myspringboot.entity.UserEntity> com.myspringboot.web.UserController.findUserByName(java.lang.String)
+2017-05-31 11:14:19.978 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/curpage]}" onto public java.util.List<com.myspringboot.entity.UserEntity> com.myspringboot.web.UserController.curPage(int)
+2017-05-31 11:14:19.978 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/userlist]}" onto public java.util.List<com.myspringboot.entity.UserEntity> com.myspringboot.web.UserController.userList()
+2017-05-31 11:14:19.979 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/deleteUserById]}" onto public void com.myspringboot.web.UserController.deleteUser(java.lang.String)
+2017-05-31 11:14:19.981 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-31 11:14:19.981 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-31 11:14:20.014 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/mystatic/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:14:20.014 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:14:20.014 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:14:20.035 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in restExceptionHandler
+2017-05-31 11:14:20.058 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:14:20.313 [main] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-05-31 11:14:20.382 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-05-31 11:14:20.406 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-05-31 11:14:20.420 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-05-31 11:14:20.430 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-05-31 11:14:20.449 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-05-31 11:14:20.454 [main] INFO  com.myspringboot.Application - Started Application in 7.183 seconds (JVM running for 7.638)
+2017-05-31 11:14:29.632 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-31 11:14:29.633 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-31 11:14:29.748 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 115 ms
+2017-05-31 11:14:29.834 [http-nio-8080-exec-1] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-31 11:14:30.003 [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1054, SQLState: 42S22
+2017-05-31 11:14:30.003 [http-nio-8080-exec-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown column 'bookentity0_.public_time' in 'field list'
+2017-05-31 11:16:39.133 [main] INFO  com.myspringboot.Application - Starting Application on BFD-544-PC with PID 47784 (D:\workspace\springboot_op\target\classes started by BFD-544 in D:\workspace\springboot_op)
+2017-05-31 11:16:39.136 [main] INFO  com.myspringboot.Application - No active profile set, falling back to default profiles: default
+2017-05-31 11:16:39.237 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d0f2471: startup date [Wed May 31 11:16:39 CST 2017]; root of context hierarchy
+2017-05-31 11:16:39.432 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.5.Final
+2017-05-31 11:16:40.795 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:16:40.895 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:16:41.129 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:16:41.163 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.UserRepository.
+2017-05-31 11:16:41.164 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.mytest.BookRepository.
+2017-05-31 11:16:41.165 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.LoggerRepository.
+2017-05-31 11:16:42.434 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-05-31 11:16:42.453 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-05-31 11:16:42.454 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.13
+2017-05-31 11:16:42.583 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-05-31 11:16:42.584 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3347 ms
+2017-05-31 11:16:42.805 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-05-31 11:16:42.807 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-31 11:16:42.808 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.myspringboot.servlet.MyServlet' to [/myservlet]
+2017-05-31 11:16:42.811 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-31 11:16:42.812 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-31 11:16:42.813 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-31 11:16:42.813 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-31 11:16:42.813 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2017-05-31 11:16:43.179 [main] WARN  org.apache.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 20
+2017-05-31 11:16:43.542 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 11:16:43.564 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: bookPersistenceUnit
+	...]
+2017-05-31 11:16:43.767 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-31 11:16:43.769 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-05-31 11:16:43.771 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-05-31 11:16:43.819 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-31 11:16:43.941 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-31 11:16:44.392 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 11:16:44.469 [main] WARN  org.apache.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 20
+2017-05-31 11:16:44.489 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 11:16:44.489 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: userPersistenceUnit
+	...]
+2017-05-31 11:16:44.508 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-31 11:16:44.552 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 11:16:45.386 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d0f2471: startup date [Wed May 31 11:16:39 CST 2017]; root of context hierarchy
+2017-05-31 11:16:45.502 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/booklist]}" onto public java.util.List<com.myspringboot.mytest.BookEntity> com.myspringboot.mytest.BookController.booklist()
+2017-05-31 11:16:45.503 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logtest]}" onto public java.lang.String com.myspringboot.web.LoggerController.loggerTest(java.lang.String)
+2017-05-31 11:16:45.504 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/finduserbyname]}" onto public java.util.List<com.myspringboot.entity.UserEntity> com.myspringboot.web.UserController.findUserByName(java.lang.String)
+2017-05-31 11:16:45.505 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/curpage]}" onto public java.util.List<com.myspringboot.entity.UserEntity> com.myspringboot.web.UserController.curPage(int)
+2017-05-31 11:16:45.505 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/userlist]}" onto public java.util.List<com.myspringboot.entity.UserEntity> com.myspringboot.web.UserController.userList()
+2017-05-31 11:16:45.505 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/deleteUserById]}" onto public void com.myspringboot.web.UserController.deleteUser(java.lang.String)
+2017-05-31 11:16:45.507 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-31 11:16:45.508 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-31 11:16:45.540 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/mystatic/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:16:45.540 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:16:45.540 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:16:45.560 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in restExceptionHandler
+2017-05-31 11:16:45.585 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:16:45.824 [main] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-05-31 11:16:45.887 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-05-31 11:16:45.907 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-05-31 11:16:45.922 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-05-31 11:16:45.935 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-05-31 11:16:45.958 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-05-31 11:16:45.963 [main] INFO  com.myspringboot.Application - Started Application in 7.299 seconds (JVM running for 7.838)
+2017-05-31 11:22:42.419 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-31 11:22:42.419 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-31 11:22:42.450 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2017-05-31 11:22:42.520 [http-nio-8080-exec-1] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-31 11:22:42.677 [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1054, SQLState: 42S22
+2017-05-31 11:22:42.678 [http-nio-8080-exec-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown column 'bookentity0_.public_time' in 'field list'
+2017-05-31 11:23:56.473 [http-nio-8080-exec-4] INFO  com.myspringboot.web.UserController - info : users : [{name= + zhangsan, gender= F, phone= 12343543, , address= 海淀}, {name= + 王舞, gender= F, phone= 45765756, , address= 昌平}, {name= + 王6, gender= F, phone= 45765756, , address= 昌平}, {name= + 王7, gender= F, phone= 45765756, , address= 昌平}, {name= + 王8, gender= F, phone= 45765756, , address= 昌平}, {name= + 王9, gender= F, phone= 45765756, , address= 昌平}, {name= + 王10, gender= F, phone= 45765756, , address= 昌平}, {name= + 王11, gender= F, phone= 45765756, , address= 昌平}, {name= + 王12, gender= F, phone= 45765756, , address= 昌平}, {name= + 王13, gender= F, phone= 45765756, , address= 昌平}, {name= + 王14, gender= F, phone= 45765756, , address= 昌平}, {name= + 王15, gender= F, phone= 45765756, , address= 昌平}, {name= + 王16, gender= F, phone= 45765756, , address= 昌平}, {name= + 王17, gender= F, phone= 45765756, , address= 昌平}, {name= + 王18, gender= F, phone= 45765756, , address= 昌平}, {name= + 王19, gender= F, phone= 45765756, , address= 昌平}, {name= + 王20, gender= F, phone= 45765756, , address= 昌平}]
+2017-05-31 11:23:56.474 [http-nio-8080-exec-4] ERROR com.myspringboot.web.UserController - error : users : [{name= + zhangsan, gender= F, phone= 12343543, , address= 海淀}, {name= + 王舞, gender= F, phone= 45765756, , address= 昌平}, {name= + 王6, gender= F, phone= 45765756, , address= 昌平}, {name= + 王7, gender= F, phone= 45765756, , address= 昌平}, {name= + 王8, gender= F, phone= 45765756, , address= 昌平}, {name= + 王9, gender= F, phone= 45765756, , address= 昌平}, {name= + 王10, gender= F, phone= 45765756, , address= 昌平}, {name= + 王11, gender= F, phone= 45765756, , address= 昌平}, {name= + 王12, gender= F, phone= 45765756, , address= 昌平}, {name= + 王13, gender= F, phone= 45765756, , address= 昌平}, {name= + 王14, gender= F, phone= 45765756, , address= 昌平}, {name= + 王15, gender= F, phone= 45765756, , address= 昌平}, {name= + 王16, gender= F, phone= 45765756, , address= 昌平}, {name= + 王17, gender= F, phone= 45765756, , address= 昌平}, {name= + 王18, gender= F, phone= 45765756, , address= 昌平}, {name= + 王19, gender= F, phone= 45765756, , address= 昌平}, {name= + 王20, gender= F, phone= 45765756, , address= 昌平}]
+2017-05-31 11:29:40.008 [main] INFO  com.myspringboot.Application - Starting Application on BFD-544-PC with PID 52524 (D:\workspace\springboot_op\target\classes started by BFD-544 in D:\workspace\springboot_op)
+2017-05-31 11:29:40.011 [main] INFO  com.myspringboot.Application - No active profile set, falling back to default profiles: default
+2017-05-31 11:29:40.100 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d0f2471: startup date [Wed May 31 11:29:40 CST 2017]; root of context hierarchy
+2017-05-31 11:29:40.322 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.5.Final
+2017-05-31 11:29:41.541 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:29:41.624 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:29:41.657 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'bookRepository' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2017-05-31 11:29:41.846 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:29:41.881 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.book.BookRepository.
+2017-05-31 11:29:41.883 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.user.UserRepository.
+2017-05-31 11:29:41.884 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.LoggerRepository.
+2017-05-31 11:29:43.040 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-05-31 11:29:43.054 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-05-31 11:29:43.056 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.13
+2017-05-31 11:29:43.174 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-05-31 11:29:43.174 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3074 ms
+2017-05-31 11:29:43.395 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-05-31 11:29:43.397 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-31 11:29:43.398 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.myspringboot.servlet.MyServlet' to [/myservlet]
+2017-05-31 11:29:43.402 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-31 11:29:43.402 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-31 11:29:43.403 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-31 11:29:43.403 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-31 11:29:43.403 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2017-05-31 11:29:43.752 [main] WARN  org.apache.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 20
+2017-05-31 11:29:44.064 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 11:29:44.079 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: bookPersistenceUnit
+	...]
+2017-05-31 11:29:44.294 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-31 11:29:44.295 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-05-31 11:29:44.297 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-05-31 11:29:44.369 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-31 11:29:44.521 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-31 11:29:45.052 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 11:29:45.153 [main] WARN  org.apache.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 20
+2017-05-31 11:29:45.170 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 11:29:45.171 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: userPersistenceUnit
+	...]
+2017-05-31 11:29:45.185 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-31 11:29:45.235 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 11:29:46.100 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d0f2471: startup date [Wed May 31 11:29:40 CST 2017]; root of context hierarchy
+2017-05-31 11:29:46.171 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/booklist]}" onto public java.util.List<com.myspringboot.entity.BookEntity> com.myspringboot.web.BookController.booklist()
+2017-05-31 11:29:46.172 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logtest]}" onto public java.lang.String com.myspringboot.web.LoggerController.loggerTest(java.lang.String)
+2017-05-31 11:29:46.173 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/finduserbyname]}" onto public java.util.List<com.myspringboot.entity.UserEntity> com.myspringboot.web.UserController.findUserByName(java.lang.String)
+2017-05-31 11:29:46.173 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/curpage]}" onto public java.util.List<com.myspringboot.entity.UserEntity> com.myspringboot.web.UserController.curPage(int)
+2017-05-31 11:29:46.173 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/userlist]}" onto public java.util.List<com.myspringboot.entity.UserEntity> com.myspringboot.web.UserController.userList()
+2017-05-31 11:29:46.173 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/deleteUserById]}" onto public void com.myspringboot.web.UserController.deleteUser(java.lang.String)
+2017-05-31 11:29:46.175 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-31 11:29:46.176 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-31 11:29:46.207 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/mystatic/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:29:46.207 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:29:46.207 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:29:46.228 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in restExceptionHandler
+2017-05-31 11:29:46.252 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:29:46.518 [main] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-05-31 11:29:46.583 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-05-31 11:29:46.604 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-05-31 11:29:46.618 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-05-31 11:29:46.632 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-05-31 11:29:46.651 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-05-31 11:29:46.656 [main] INFO  com.myspringboot.Application - Started Application in 7.116 seconds (JVM running for 7.602)
+2017-05-31 11:29:52.793 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-31 11:29:52.794 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-31 11:29:52.813 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2017-05-31 11:29:53.036 [http-nio-8080-exec-1] INFO  com.myspringboot.web.UserController - info : users : [{name= + zhangsan, gender= F, phone= 12343543, , address= 海淀}, {name= + 王舞, gender= F, phone= 45765756, , address= 昌平}, {name= + 王6, gender= F, phone= 45765756, , address= 昌平}, {name= + 王7, gender= F, phone= 45765756, , address= 昌平}, {name= + 王8, gender= F, phone= 45765756, , address= 昌平}, {name= + 王9, gender= F, phone= 45765756, , address= 昌平}, {name= + 王10, gender= F, phone= 45765756, , address= 昌平}, {name= + 王11, gender= F, phone= 45765756, , address= 昌平}, {name= + 王12, gender= F, phone= 45765756, , address= 昌平}, {name= + 王13, gender= F, phone= 45765756, , address= 昌平}, {name= + 王14, gender= F, phone= 45765756, , address= 昌平}, {name= + 王15, gender= F, phone= 45765756, , address= 昌平}, {name= + 王16, gender= F, phone= 45765756, , address= 昌平}, {name= + 王17, gender= F, phone= 45765756, , address= 昌平}, {name= + 王18, gender= F, phone= 45765756, , address= 昌平}, {name= + 王19, gender= F, phone= 45765756, , address= 昌平}, {name= + 王20, gender= F, phone= 45765756, , address= 昌平}]
+2017-05-31 11:29:53.036 [http-nio-8080-exec-1] ERROR com.myspringboot.web.UserController - error : users : [{name= + zhangsan, gender= F, phone= 12343543, , address= 海淀}, {name= + 王舞, gender= F, phone= 45765756, , address= 昌平}, {name= + 王6, gender= F, phone= 45765756, , address= 昌平}, {name= + 王7, gender= F, phone= 45765756, , address= 昌平}, {name= + 王8, gender= F, phone= 45765756, , address= 昌平}, {name= + 王9, gender= F, phone= 45765756, , address= 昌平}, {name= + 王10, gender= F, phone= 45765756, , address= 昌平}, {name= + 王11, gender= F, phone= 45765756, , address= 昌平}, {name= + 王12, gender= F, phone= 45765756, , address= 昌平}, {name= + 王13, gender= F, phone= 45765756, , address= 昌平}, {name= + 王14, gender= F, phone= 45765756, , address= 昌平}, {name= + 王15, gender= F, phone= 45765756, , address= 昌平}, {name= + 王16, gender= F, phone= 45765756, , address= 昌平}, {name= + 王17, gender= F, phone= 45765756, , address= 昌平}, {name= + 王18, gender= F, phone= 45765756, , address= 昌平}, {name= + 王19, gender= F, phone= 45765756, , address= 昌平}, {name= + 王20, gender= F, phone= 45765756, , address= 昌平}]
+2017-05-31 11:30:01.383 [http-nio-8080-exec-2] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-31 11:30:01.526 [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1146, SQLState: 42S02
+2017-05-31 11:30:01.526 [http-nio-8080-exec-2] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table 'test.book' doesn't exist
+2017-05-31 11:30:37.127 [main] INFO  com.myspringboot.Application - Starting Application on BFD-544-PC with PID 52500 (D:\workspace\springboot_op\target\classes started by BFD-544 in D:\workspace\springboot_op)
+2017-05-31 11:30:37.130 [main] INFO  com.myspringboot.Application - No active profile set, falling back to default profiles: default
+2017-05-31 11:30:37.224 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d0f2471: startup date [Wed May 31 11:30:37 CST 2017]; root of context hierarchy
+2017-05-31 11:30:37.457 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.5.Final
+2017-05-31 11:30:38.791 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:30:38.869 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:30:39.074 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-31 11:30:39.108 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.book.BookRepository.
+2017-05-31 11:30:39.109 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.user.UserRepository.
+2017-05-31 11:30:39.111 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.myspringboot.repository.LoggerRepository.
+2017-05-31 11:30:40.393 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-05-31 11:30:40.412 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-05-31 11:30:40.413 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.13
+2017-05-31 11:30:40.555 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-05-31 11:30:40.555 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3331 ms
+2017-05-31 11:30:40.774 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-05-31 11:30:40.775 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-31 11:30:40.776 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'com.myspringboot.servlet.MyServlet' to [/myservlet]
+2017-05-31 11:30:40.780 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-31 11:30:40.781 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-31 11:30:40.781 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-31 11:30:40.781 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-31 11:30:40.782 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2017-05-31 11:30:41.196 [main] WARN  org.apache.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 20
+2017-05-31 11:30:41.496 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 11:30:41.512 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: bookPersistenceUnit
+	...]
+2017-05-31 11:30:41.715 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-31 11:30:41.717 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-05-31 11:30:41.718 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-05-31 11:30:41.765 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-31 11:30:41.889 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-31 11:30:42.394 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'bookPersistenceUnit'
+2017-05-31 11:30:42.495 [main] WARN  org.apache.tomcat.jdbc.pool.ConnectionPool - maxIdle is larger than maxActive, setting maxIdle to: 20
+2017-05-31 11:30:42.512 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 11:30:42.512 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: userPersistenceUnit
+	...]
+2017-05-31 11:30:42.526 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-31 11:30:42.607 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'userPersistenceUnit'
+2017-05-31 11:30:43.465 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d0f2471: startup date [Wed May 31 11:30:37 CST 2017]; root of context hierarchy
+2017-05-31 11:30:43.559 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/booklist]}" onto public java.util.List<com.myspringboot.entity.BookEntity> com.myspringboot.web.BookController.booklist()
+2017-05-31 11:30:43.560 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logtest]}" onto public java.lang.String com.myspringboot.web.LoggerController.loggerTest(java.lang.String)
+2017-05-31 11:30:43.561 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/finduserbyname]}" onto public java.util.List<com.myspringboot.entity.UserEntity> com.myspringboot.web.UserController.findUserByName(java.lang.String)
+2017-05-31 11:30:43.561 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/curpage]}" onto public java.util.List<com.myspringboot.entity.UserEntity> com.myspringboot.web.UserController.curPage(int)
+2017-05-31 11:30:43.561 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/userlist]}" onto public java.util.List<com.myspringboot.entity.UserEntity> com.myspringboot.web.UserController.userList()
+2017-05-31 11:30:43.562 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/deleteUserById]}" onto public void com.myspringboot.web.UserController.deleteUser(java.lang.String)
+2017-05-31 11:30:43.564 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-31 11:30:43.564 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-31 11:30:43.597 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/mystatic/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:30:43.597 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:30:43.597 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:30:43.617 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in restExceptionHandler
+2017-05-31 11:30:43.642 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-31 11:30:43.898 [main] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2017-05-31 11:30:43.943 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-05-31 11:30:43.965 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-05-31 11:30:43.981 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-05-31 11:30:43.993 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-05-31 11:30:44.015 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-05-31 11:30:44.020 [main] INFO  com.myspringboot.Application - Started Application in 7.374 seconds (JVM running for 7.847)
+2017-05-31 11:30:50.575 [main] INFO  com.myspringboot.Application - Starting Application on BFD-544-PC with PID 53032 (D:\workspace\springboot_op\target\classes started by BFD-544 in D:\workspace\springboot_op)
+2017-05-31 11:30:50.577 [main] INFO  com.myspringboot.Application - No active profile set, falling back to default profiles: default
+2017-05-31 11:30:50.675 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d0f2471: startup date [Wed May 31 11:30:50 CST 2017]; root of context hierarchy
+2017-05-31 11:30:50.822 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.5.Final
+2017-05-31 11:30:56.953 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-31 11:30:56.953 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-31 11:30:56.973 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2017-05-31 11:30:57.055 [http-nio-8080-exec-1] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-31 11:31:02.699 [http-nio-8080-exec-2] INFO  com.myspringboot.web.UserController - info : users : [{name= + zhangsan, gender= F, phone= 12343543, , address= 海淀}, {name= + 王舞, gender= F, phone= 45765756, , address= 昌平}, {name= + 王6, gender= F, phone= 45765756, , address= 昌平}, {name= + 王7, gender= F, phone= 45765756, , address= 昌平}, {name= + 王8, gender= F, phone= 45765756, , address= 昌平}, {name= + 王9, gender= F, phone= 45765756, , address= 昌平}, {name= + 王10, gender= F, phone= 45765756, , address= 昌平}, {name= + 王11, gender= F, phone= 45765756, , address= 昌平}, {name= + 王12, gender= F, phone= 45765756, , address= 昌平}, {name= + 王13, gender= F, phone= 45765756, , address= 昌平}, {name= + 王14, gender= F, phone= 45765756, , address= 昌平}, {name= + 王15, gender= F, phone= 45765756, , address= 昌平}, {name= + 王16, gender= F, phone= 45765756, , address= 昌平}, {name= + 王17, gender= F, phone= 45765756, , address= 昌平}, {name= + 王18, gender= F, phone= 45765756, , address= 昌平}, {name= + 王19, gender= F, phone= 45765756, , address= 昌平}, {name= + 王20, gender= F, phone= 45765756, , address= 昌平}]
+2017-05-31 11:31:02.700 [http-nio-8080-exec-2] ERROR com.myspringboot.web.UserController - error : users : [{name= + zhangsan, gender= F, phone= 12343543, , address= 海淀}, {name= + 王舞, gender= F, phone= 45765756, , address= 昌平}, {name= + 王6, gender= F, phone= 45765756, , address= 昌平}, {name= + 王7, gender= F, phone= 45765756, , address= 昌平}, {name= + 王8, gender= F, phone= 45765756, , address= 昌平}, {name= + 王9, gender= F, phone= 45765756, , address= 昌平}, {name= + 王10, gender= F, phone= 45765756, , address= 昌平}, {name= + 王11, gender= F, phone= 45765756, , address= 昌平}, {name= + 王12, gender= F, phone= 45765756, , address= 昌平}, {name= + 王13, gender= F, phone= 45765756, , address= 昌平}, {name= + 王14, gender= F, phone= 45765756, , address= 昌平}, {name= + 王15, gender= F, phone= 45765756, , address= 昌平}, {name= + 王16, gender= F, phone= 45765756, , address= 昌平}, {name= + 王17, gender= F, phone= 45765756, , address= 昌平}, {name= + 王18, gender= F, phone= 45765756, , address= 昌平}, {name= + 王19, gender= F, phone= 45765756, , address= 昌平}, {name= + 王20, gender= F, phone= 45765756, , address= 昌平}]
