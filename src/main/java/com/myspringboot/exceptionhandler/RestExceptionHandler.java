@@ -30,6 +30,7 @@ public class RestExceptionHandler {
 	@ResponseStatus
 	public ApiResult exceptionHandler(Exception e){
 		System.out.println("拦截到异常 : " + e.getMessage());
+//		e.printStackTrace();
 		return ApiResultGenerator.errorResult(e.getMessage(), e);
 	}
 }

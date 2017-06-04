@@ -13,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.myspringboot.entity.LoggerEntity;
-import com.myspringboot.repository.LoggerRepository;
+import com.myspringboot.repository.user.LoggerRepository;
 import com.myspringboot.utils.LoggerUtils;
 
 public class LoggerInterceptor implements HandlerInterceptor{

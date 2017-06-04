@@ -11,7 +11,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import com.myspringboot.entity.UserEntity;
-import com.myspringboot.repository.user.UserRepository;
+import com.myspringboot.repository.user.UserEntityRepository;
 import com.myspringboot.service.UserService;
 
 @Service
@@ -20,7 +20,7 @@ import com.myspringboot.service.UserService;
 public class UserServiceImpl implements UserService{
 	
 	@Autowired
-	private UserRepository userRepository;
+	private UserEntityRepository userRepository;
 
 	@Override
 	@Cacheable //key的属性值必须是SpEL表达式，如果常量的话必须加单引号如key = "'userlist'"
@@ -31,13 +31,13 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public List<UserEntity> findUserByName(String name) {
-		List<UserEntity> users = userRepository.findUserByName(name);
-		return users;
+//		List<UserEntity> users = userRepository.findUserByName(name);
+		return null;
 	}
 
 	@Override
 	public void deleteUserById(String id) {
-		userRepository.deleteUserById(id);
+//		userRepository.deleteUserById(id);
 	}
 
 	@Override
