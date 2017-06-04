@@ -34,7 +34,7 @@ public class Neo4jController {
 	
 	@RequestMapping("/user_nodes")
 	public List<UserGraphEntity> findUsers(String id){
-		Iterable<UserGraphEntity> users = neo4jService.findUser(id);
+		Iterable<UserGraphEntity> users = neo4jService.findAllUser();
 		List<UserGraphEntity> res = new ArrayList<UserGraphEntity>();
 		for(UserGraphEntity u : users){
 			res.add(u);

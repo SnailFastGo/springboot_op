@@ -25,7 +25,7 @@ public class Neo4jServiceImpl implements Neo4jService{
 	}
 
 	@Override
-	public Iterable<UserGraphEntity> findUser(String id) {
+	public Iterable<UserGraphEntity> findAllUser() {
 		Iterable<UserGraphEntity> res = userGraphRepository.findAll();
 		return res;
 	}
