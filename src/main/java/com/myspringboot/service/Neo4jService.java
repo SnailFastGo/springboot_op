@@ -9,4 +9,6 @@ public interface Neo4jService {
 	UserGraphEntity createUser(UserGraphEntity userGraphEntity);
 	
 	Iterable<UserGraphEntity> findAllUser();
+	
+	List<UserGraphEntity> findUserByUserId(String userId);
 }

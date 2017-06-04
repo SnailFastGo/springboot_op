@@ -41,4 +41,10 @@ public class Neo4jController {
 		}
 		return res;
 	}
+	
+	@RequestMapping("/find_users_by_userId")
+	public List<UserGraphEntity> findUserByUserId(String userId){
+		List<UserGraphEntity> users = neo4jService.findUserByUserId(userId);
+		return users;
+	}
 }

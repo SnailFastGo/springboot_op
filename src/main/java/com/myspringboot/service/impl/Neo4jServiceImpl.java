@@ -30,5 +30,10 @@ public class Neo4jServiceImpl implements Neo4jService{
 		return res;
 	}
 
+	@Override
+	public List<UserGraphEntity> findUserByUserId(String userId) {
+		List<UserGraphEntity> users = userGraphRepository.findUserByUserId(userId);
+		return users;
+	}
 	
 }
