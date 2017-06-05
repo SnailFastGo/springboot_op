@@ -34,6 +34,7 @@ public class RedisConfiguration extends CachingConfigurerSupport{
      * @return
      */
     @Bean
+    @SuppressWarnings("unchecked")
     public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factory) {
         StringRedisTemplate template = new StringRedisTemplate(factory);
         //定义value的序列化方式
