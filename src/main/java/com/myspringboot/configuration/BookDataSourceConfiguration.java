@@ -11,6 +11,7 @@ import org.springframework.boot.autoconfigure.orm.jpa.JpaProperties;
 import org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
@@ -20,30 +21,32 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories(
-        entityManagerFactoryRef="entityManagerFactoryUser",//实体管理引用
-        transactionManagerRef="transactionManagerUser",//事务管理引用
-        basePackages = { "com.myspringboot.repository.user", "com.myspringboot.entity"}) //设置用户数据源所应用到的包
-public class UserDataSourceConfigurer
+        entityManagerFactoryRef="entityManagerFactoryBook",//实体管理引用
+        transactionManagerRef="transactionManagerBook",//事务管理引用
+        basePackages = {"com.myspringboot.repository.book", "com.myspringboot.entity"}) //设置书籍数据源所应用到的包
+public class BookDataSourceConfiguration
 {
-    //注入用户数据源
+    //注入书籍数据源
     @Autowired
-    @Qualifier("userDataSource")
-    private DataSource userDataSource;
+    @Qualifier("bookDataSource")
+    private DataSource bookDataSource;
 
     //配置EntityManager实体
-    @Bean(name = "entityManagerUser")
+    @Primary
+    @Bean(name = "entityManagerBook")
     public EntityManager entityManager(EntityManagerFactoryBuilder builder) {
-        return entityManagerFactoryUser(builder).getObject().createEntityManager();
+        return entityManagerFactoryBook(builder).getObject().createEntityManager();
     }
 
     //配置EntityManager工厂实体
-    @Bean(name = "entityManagerFactoryUser")
-    public LocalContainerEntityManagerFactoryBean entityManagerFactoryUser (EntityManagerFactoryBuilder builder) {
+    @Primary
+    @Bean(name = "entityManagerFactoryBook")
+    public LocalContainerEntityManagerFactoryBean entityManagerFactoryBook (EntityManagerFactoryBuilder builder) {
         return builder
-                .dataSource(userDataSource)
-                .properties(getVendorProperties(userDataSource))
-                .packages(new String[]{ "com.myspringboot.repository.user", "com.myspringboot.entity" }) //设置应用userDataSource的基础包名
-                .persistenceUnit("userPersistenceUnit")
+                .dataSource(bookDataSource)
+                .properties(getVendorProperties(bookDataSource))
+                .packages(new String[]{"com.myspringboot.repository.book", "com.myspringboot.entity"}) //设置应用bookDataSource的基础包名
+                .persistenceUnit("bookPersistenceUnit")
                 .build();
     }
 
@@ -57,8 +60,9 @@ public class UserDataSourceConfigurer
     }
 
     //配置事务
-    @Bean(name = "transactionManagerUser")
-    public PlatformTransactionManager transactionManagerUser(EntityManagerFactoryBuilder builder) {
-        return new JpaTransactionManager(entityManagerFactoryUser(builder).getObject());
+    @Primary
+    @Bean(name = "transactionManagerBook")
+    public PlatformTransactionManager transactionManagerBook(EntityManagerFactoryBuilder builder) {
+        return new JpaTransactionManager(entityManagerFactoryBook(builder).getObject());
     }
 }
