@@ -26,6 +26,9 @@ public class Neo4jController {
 			user.setUserId("" + i);
 			user.setName("zhangsan" + i);
 			user.setPhone("" + i);
+			user.getLables().add("Label1");
+			user.getLables().add("Label2");
+			user.getLables().add("Label3");
 			neo4jService.createUser(user);
 		}
 		long end  = System.currentTimeMillis();
@@ -47,4 +50,5 @@ public class Neo4jController {
 		List<UserGraphEntity> users = neo4jService.findUserByUserId(userId);
 		return users;
 	}
+	
 }

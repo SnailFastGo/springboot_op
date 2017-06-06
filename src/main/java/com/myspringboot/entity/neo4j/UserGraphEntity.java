@@ -1,6 +1,10 @@
 package com.myspringboot.entity.neo4j;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.neo4j.ogm.annotation.GraphId;
+import org.neo4j.ogm.annotation.Labels;
 import org.neo4j.ogm.annotation.NodeEntity;
 
 @NodeEntity
@@ -14,6 +18,10 @@ public class UserGraphEntity {
 	private String name;
 	
 	private String phone;
+	
+	//标签集合
+	@Labels
+	private List<String> lables = new ArrayList<String>();
 	
 	public Long getId() {
 		return id;
@@ -46,6 +54,15 @@ public class UserGraphEntity {
 
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+	
+
+	public List<String> getLables() {
+		return lables;
+	}
+
+	public void setLables(List<String> lables) {
+		this.lables = lables;
 	}
 
 	@Override
