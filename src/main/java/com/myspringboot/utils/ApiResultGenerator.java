@@ -33,6 +33,7 @@ public class ApiResultGenerator {
      * @param result 执行成功后的返回内容
      * @return
      */
+    @SuppressWarnings("rawtypes")
     public static ApiResult successResult(Object result)
     {
         //rows默认为0

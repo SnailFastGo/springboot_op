@@ -91,7 +91,7 @@ public class LoggerInterceptor implements HandlerInterceptor{
         loggerEntity.setHttpStatusCode(status + "");
         
         //设置返回值,返回值需要配置AOP拦截，待完善
-        String returnData = null;
+//        String returnData = null;
         
         LoggerRepository loggerDAO = getDAO(LoggerRepository.class, request);
         loggerDAO.save(loggerEntity);

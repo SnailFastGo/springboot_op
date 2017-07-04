@@ -17,7 +17,7 @@ import com.myspringboot.entity.MailEntity;
 import com.myspringboot.utils.PropertiesUtil;
 
 public class MailSender {
-	private static MailEntity mail = new MailEntity();
+	private MailEntity mail = new MailEntity();
 	
 	public MailSender setTitle(String title){
 		this.mail.setTitle(title);

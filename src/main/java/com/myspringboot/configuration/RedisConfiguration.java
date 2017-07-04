@@ -24,6 +24,7 @@ public class RedisConfiguration extends CachingConfigurerSupport{
 	
 	
 	@Bean
+	@SuppressWarnings("rawtypes")
 	public CacheManager cacheManager(RedisTemplate redisTemplate) {
 		return new RedisCacheManager(redisTemplate);
 	}
@@ -34,7 +35,7 @@ public class RedisConfiguration extends CachingConfigurerSupport{
      * @return
      */
     @Bean
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({"rawtypes", "unchecked"})
     public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factory) {
         StringRedisTemplate template = new StringRedisTemplate(factory);
         //定义value的序列化方式

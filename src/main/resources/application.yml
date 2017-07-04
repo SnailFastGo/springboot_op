@@ -1,3 +1,10 @@
+server:
+  port: 8080
+  address:127.0.0.1
+  tomcat:
+      uri-encoding: UTF-8
+      max-threads: 800
+
 spring:
   datasource:
    user:
