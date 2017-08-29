@@ -1,6 +1,6 @@
 server:
   port: 8080
-  address:127.0.0.1
+  address: 127.0.0.1
   tomcat:
       uri-encoding: UTF-8
       max-threads: 800
@@ -86,3 +86,5 @@ spring:
     ip: 172.24.5.149
     port: 9300
     cluster_name: logging-dev
+  velocity:
+    resourceLoaderPath: classpath:/templates/
